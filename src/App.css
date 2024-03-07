@@ -2,9 +2,16 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
+/* ::-webkit-scrollbar {
+  display: none;
+} */
 html,
 body {
   height: 100%;
   width: 100%;
+}
+.btncolor {
+  background: linear-gradient(81.62deg, #2870ea 8.72%, #1b4aef 85.01%);
 }

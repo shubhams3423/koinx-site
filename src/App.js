@@ -1,8 +1,11 @@
 import "./App.css";
+import Main from "./components/Main";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold text-center pt-5">Hello world</h1>
+      <Navbar />
+      <Main />
     </div>
   );
 }
