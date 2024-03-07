@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TopTrendingInfo from "./TopTrendingInfo";
 import TradingViewWidget from "./TradingViewWidget";
+import { toast } from "react-toastify";
 
 const TopTrendingBox = () => {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -19,7 +20,7 @@ const TopTrendingBox = () => {
       .then((data) => {
         setTopGraphInfo(data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error("Error accessing simple/price"));
   }, []);
 
   return (

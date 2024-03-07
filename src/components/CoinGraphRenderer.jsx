@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TrendingCoinBox from "./TrendingCoinBox";
 import Skeleton from "react-loading-skeleton";
+import { toast } from "react-toastify";
 
 const CoinGraphRenderer = () => {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -16,7 +17,7 @@ const CoinGraphRenderer = () => {
         setCoinData(data?.coins);
         setIsLoading(false);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error("Error accessing /search/trending"));
   }, []);
   return (
     <div className="overflow-auto whitespace-nowrap w-full  ">

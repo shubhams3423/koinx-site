@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ChangePercentageBox from "./ChangePercentageBox";
 import Skeleton from "react-loading-skeleton";
+import { toast } from "react-toastify";
 
 const TopTrendingInfo = ({ getUrlParam }) => {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -19,7 +20,7 @@ const TopTrendingInfo = ({ getUrlParam }) => {
         setIsLaoding(false);
         setCoinData(data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error("Error accessing /coins/id"));
   }, []);
   return (
     <div className="flex gap-y-5 flex-col">

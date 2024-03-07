@@ -17,10 +17,13 @@ const GetStartedTemp = () => {
         <img src={frame} className="h-full w-full" alt="" />
       </div>
       <div className="md:order-3 order-3">
-        <button className="bg-white py-2 px-6 rounded-lg font-semibold flex items-center gap-x-[6px] m-auto">
-          Get Started for FREE
-          <img src={rightArrow} className="w-5 h-5" alt="" />
-        </button>
+        <a href="https://www.koinx.com/" target="_blank" rel="noreferrer">
+          {" "}
+          <button className="bg-white py-2 px-6 rounded-lg font-semibold flex items-center gap-x-[6px] m-auto">
+            Get Started for FREE
+            <img src={rightArrow} className="w-5 h-5" alt="" />
+          </button>
+        </a>
       </div>
     </div>
   );

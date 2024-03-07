@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import ChangePercentageBox from "./ChangePercentageBox";
+import { toast } from "react-toastify";
 
 const TrendingCoins = () => {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -18,7 +19,7 @@ const TrendingCoins = () => {
         setTrendingCoinsData(data?.coins.slice(0, 3));
         setIsLoading(false);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error("Error accessing /search/trending"));
   }, []);
   return (
     <div className="flex gap-y-4 rounded-xl p-6 flex-col md:w-full h-[225px] bg-white">
