@@ -60,7 +60,7 @@ const TopTrendingInfo = ({ getUrlParam }) => {
               {(
                 <ChangePercentageBox
                   changedGraphCoinValue={
-                    coinData?.market_data?.price_change_24h
+                    coinData?.market_data?.price_change_percentage_24h
                   }
                 />
               ) || <Skeleton width={"40px"} height={"30px"} />}

@@ -7,7 +7,7 @@ const ChangePercentage = ({ coinChangedValue, graphCoin }) => {
     <div
       className={`${
         graphCoin
-          ? "w-[64px] h-[25px] rounded-[2px] px-[3px] py-[4px]"
+          ? "min-w-[64px] max-w-[84px] h-[25px] rounded-[2px] px-[3px] py-[4px]"
           : "max-w-[98px] min-w-[84px] rounded-md  px-[0.8rem] py-[0.3rem]"
       }  flex items-center justify-between gap-x-2 ${
         coinChangedValue < 0 ? "bg-[#EE68551A]" : "bg-[#EBF9F4]"
