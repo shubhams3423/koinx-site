@@ -1,5 +1,7 @@
 import React from "react";
-
+import rightArrow from "../assets/RightArrow.svg";
+import profitCardImg from "../assets/profitCardImg.png";
+import calTaxImg from "../assets/calTaxImg.png";
 const AboutBitcoin = () => {
   return (
     <div className="rounded-lg md:p-6 px-[10px] py-4 flex flex-col gap-y-5 bg-white">
@@ -51,8 +53,48 @@ const AboutBitcoin = () => {
         Already Holding Bitcoin?
       </h4>
       <div>
-        <div></div>
-        <div></div>
+        <div className="flex md:flex-row flex-col gap-6">
+          <div className="w-[388px] h-[151px] rounded-[7px] flex items-center justify-evenly calculateProfitCard">
+            <div className="md:h-[128px] md:w-[128px]">
+              <img src={profitCardImg} className="h-full w-full" alt="" />
+            </div>
+            <div className="md:w-[195px] w-[190px] flex flex-col gap-y-4">
+              <h4 className="font-bold text-[20px] text-white">
+                Calculate your Profits
+              </h4>
+              <button className="bg-white p-2 h-[32px]  md:w-[132px] md:text-[14px] text-[13px] font-semibold w-[123px] flex  items-center rounded-lg gap-x-2">
+                Check Now
+                <div className="w-5 h-5">
+                  <img src={rightArrow} alt="" />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div className="w-[388px] h-[151px] rounded-[7px] flex items-center justify-evenly calculateTaxCard">
+            <div className="md:h-[128px] md:w-[128px]">
+              <img src={profitCardImg} className="h-full w-full" alt="" />
+            </div>
+            <div className="md:w-[195px] w-[190px] flex flex-col gap-y-4">
+              <h4 className="font-bold text-[20px] text-white">
+                Calculate your tax liability
+              </h4>
+              <button className="bg-white p-2 h-[32px] md:w-[132px] md:text-[14px] text-[13px] font-semibold w-[123px] flex  items-center rounded-lg gap-x-2">
+                Check Now
+                <div className="w-5 h-5">
+                  <img src={rightArrow} alt="" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-[1px] bg-[#C9CFDD99] w-full"></div>
+      <div className="font-medium text-[16px] text-[#3E424A]">
+        Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa
+        vel convallis duis ac. Mi adipiscing semper scelerisque porttitor
+        pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum
+        fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper
+        dui
       </div>
     </div>
   );

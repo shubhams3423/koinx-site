@@ -4,7 +4,6 @@ import menu from "../assets/Menu.svg";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [closeMenu, setCloseMenu] = useState(false);
-
   window.onscroll = () => {
     setIsScrolled(window.scrollY === 0 ? false : true);
     return () => (window.onscroll = null);
@@ -32,11 +31,13 @@ const Navbar = () => {
               !closeMenu && "hidden md:flex"
             } md:flex-row flex-col md:items-center md:gap-x-[1.8rem] md:gap-y-0 gap-y-3 md:relative absolute left-0 right-0 md:top-0  top-12 md:px-0 px-6`}
           >
-            <li className="font-semibold cursor-pointer text-sm">
+            <li className="font-semibold cursor-pointer text-sm hover:text-gray-600">
               Crypto Taxes
             </li>
-            <li className="font-semibold cursor-pointer text-sm">Free Tools</li>
-            <li className="font-semibold cursor-pointer text-sm">
+            <li className="font-semibold cursor-pointer text-sm hover:text-gray-600">
+              Free Tools
+            </li>
+            <li className="font-semibold cursor-pointer text-sm hover:text-gray-600">
               Resource Center
             </li>
             <li className="btncolor w-fit  md:ml-8 py-[0.6rem] px-[1.8rem] rounded-lg cursor-pointer">

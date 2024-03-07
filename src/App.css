@@ -15,3 +15,10 @@ body {
 .btncolor {
   background: linear-gradient(81.62deg, #2870ea 8.72%, #1b4aef 85.01%);
 }
+
+.calculateProfitCard {
+  background: linear-gradient(135deg, #79f1a4 0%, #0e5cad 100%);
+}
+.calculateTaxCard {
+  background: linear-gradient(135.73deg, #ff9865 0%, #ef3031 110.55%);
+}
