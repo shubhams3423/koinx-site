@@ -73,7 +73,7 @@ const Sentiments = () => {
           </div>
         </div>
         <div className="flex gap-x-[40px]">
-          <div className="md:w-[116px] md:h-[120px] flex items-center justify-center bg-[#EBF9F4] rounded-full md:py-[32px] md:px-7">
+          <div className="md:w-[116px] w-[116px] md:h-[120px] flex items-center justify-center bg-[#EBF9F4] rounded-full md:py-[32px] md:px-7">
             <div className="flex items-center justify-center">
               <p className="font-medium text-[36px] text-[#0FBA83]">76</p>
               <p className="font-medium text-base text-[#0FBA83]">%</p>
@@ -85,7 +85,7 @@ const Sentiments = () => {
             </div>
             <div>
               <div className="flex gap-x-2 items-center">
-                <p className="md:w-[350px] md:h-2 bg-[#00B386] rounded-sm"></p>
+                <p className="md:w-[350px] w-[139px]  h-2 bg-[#00B386] rounded-sm"></p>
                 <p className="font-medium text-[14px] text-[#7C7E8C]">76%</p>
               </div>
             </div>
@@ -94,7 +94,7 @@ const Sentiments = () => {
             </div>
             <div>
               <div className="flex gap-x-2 items-center">
-                <p className="md:w-[33px] md:h-2 bg-[#C7C8CE] rounded-sm"></p>
+                <p className=" w-[33px]    h-2 bg-[#C7C8CE] rounded-sm"></p>
                 <p className="font-medium text-[14px] text-[#7C7E8C]">8%</p>
               </div>
             </div>
@@ -103,7 +103,7 @@ const Sentiments = () => {
             </div>
             <div>
               <div className="flex gap-x-2 items-center">
-                <p className="md:w-[67px] md:h-2 bg-[#F7324C] rounded-sm"></p>
+                <p className="md:w-[67px] w-[41px] h-2 bg-[#F7324C] rounded-sm"></p>
                 <p className="font-medium text-[14px] text-[#7C7E8C]">16%</p>
               </div>
             </div>

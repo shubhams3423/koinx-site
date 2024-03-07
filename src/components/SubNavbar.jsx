@@ -13,11 +13,11 @@ const SubNavbar = () => {
   ];
   return (
     <div className="overflow-hidden h-[48px] flex items-center w-full   bg-[#eff2f5]">
-      <div className="overflow-auto whitespace-nowrap">
+      <div className="overflow-auto whitespace-nowrap flex gap-4 ">
         {navlinks.map((link, key) => {
           return (
             <div
-              className="inline-block md:mr-8  cursor-pointer"
+              className="inline-block cursor-pointer"
               onClick={() => setActive(key)}
             >
               <p
