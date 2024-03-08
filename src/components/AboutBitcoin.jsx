@@ -54,11 +54,11 @@ const AboutBitcoin = () => {
       </h4>
       <div>
         <div className="flex md:flex-row flex-col gap-6">
-          <div className="w-[388px] h-[151px] rounded-[7px] flex items-center justify-evenly calculateProfitCard">
-            <div className="md:h-[128px] md:w-[128px]">
+          <div className="md:w-[388px] md:h-[151px] h-[135px] w-full rounded-[7px] flex items-center justify-evenly calculateProfitCard">
+            <div className="md:h-[128px] md:w-[128px] h-[100px] w-[100px]">
               <img src={profitCardImg} className="h-full w-full" alt="" />
             </div>
-            <div className="md:w-[195px] w-[190px] flex flex-col gap-y-4">
+            <div className="md:w-[195px] w-[170px] flex flex-col md:gap-y-4 gap-1">
               <h4 className="font-bold text-[20px] text-white">
                 Calculate your Profits
               </h4>
@@ -70,11 +70,11 @@ const AboutBitcoin = () => {
               </button>
             </div>
           </div>
-          <div className="w-[388px] h-[151px] rounded-[7px] flex items-center justify-evenly calculateTaxCard">
-            <div className="md:h-[128px] md:w-[128px]">
+          <div className="md:w-[388px] md:h-[151px] h-[135px] w-full rounded-[7px] flex items-center justify-evenly calculateTaxCard">
+            <div className="md:h-[128px] md:w-[128px] h-[100px] w-[100px]">
               <img src={profitCardImg} className="h-full w-full" alt="" />
             </div>
-            <div className="md:w-[195px] w-[190px] flex flex-col gap-y-4">
+            <div className="md:w-[195px] w-[170px] flex flex-col md:gap-y-4 gap-1">
               <h4 className="font-bold text-[20px] text-white">
                 Calculate your tax liability
               </h4>

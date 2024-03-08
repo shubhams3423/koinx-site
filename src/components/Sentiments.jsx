@@ -72,14 +72,16 @@ const Sentiments = () => {
             <img src={icon} alt="" className="h-full w-full" />
           </div>
         </div>
-        <div className="flex gap-x-[40px]">
-          <div className="md:w-[116px] w-[116px] md:h-[120px] flex items-center justify-center bg-[#EBF9F4] rounded-full md:py-[32px] md:px-7">
+        <div className="flex md:gap-x-[40px] gap-x-[14px]">
+          <div className="md:w-[116px]   md:h-[120px] w-full h-[56px]  flex items-center justify-center bg-[#EBF9F4] rounded-full md:py-[32px] md:px-7">
             <div className="flex items-center justify-center">
-              <p className="font-medium text-[36px] text-[#0FBA83]">76</p>
+              <p className="font-medium md:text-[36px] text-[22px] text-[#0FBA83]">
+                76
+              </p>
               <p className="font-medium text-base text-[#0FBA83]">%</p>
             </div>
           </div>
-          <div className="grid grid-cols-[54px_1fr] grid-rows-[38px_38px_38px] md:w-[553px]">
+          <div className="grid md:grid-cols-[54px_1fr] grid-cols-[40px_1fr] grid-rows-[38px_38px_38px] md:w-[553px]">
             <div>
               <p className=" text-[#7C7E8C]">Buy</p>
             </div>

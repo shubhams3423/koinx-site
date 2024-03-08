@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav
           className={`flex md:h-[4rem]  ${
             closeMenu ? "h-[15rem]" : "h-[4rem]"
-          } md:px-12 px-6 border-b border-[#DEDFE2] shadow-[0_35px_60px_-15px_#1026490F]  items-center relative`}
+          } md:px-12 px-6 border-b border-[#DEDFE2] shadow-[0_35px_60px_-15px_#1026490F]  items-start relative`}
         >
           <div className="text-lg font-bold md:py-0 py-4">
             <img src={logo} alt="" />
@@ -44,7 +44,7 @@ const Navbar = () => {
               <span className="font-semibold text-white">Get Started</span>
             </li>
           </ul>
-          <div className="ml-auto md:hidden md:relative absolute right-4 text-gray-500 cursor-pointer ">
+          <div className="ml-auto md:hidden md:relative absolute right-4 top-[17px] text-gray-500 cursor-pointer ">
             <img src={menu} alt="" onClick={handleMenu} />
           </div>
         </nav>

@@ -9,8 +9,12 @@ const PiaChart = () => {
           Initial Distribution
         </h3>
         <div>
-          <div className="flex items-center gap-x-6">
-            <img src={piaChart} className="md:w-[179px] md:h-[179px] " alt="" />
+          <div className="flex items-center md:gap-x-6 gap-x-4">
+            <img
+              src={piaChart}
+              className="md:w-[179px] md:h-[179px] w-[100px] h-[100px]"
+              alt=""
+            />
             <div className="md:w-[216px]">
               <div className="flex items-center gap-x-2">
                 <p className="w-3 h-3 rounded-full bg-[#0082FF]"></p>
