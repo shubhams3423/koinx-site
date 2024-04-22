@@ -19,9 +19,9 @@ const Navbar = () => {
         }    right-0 left-0 top-0 z-50`}
       >
         <nav
-          className={`flex md:h-[4rem]  ${
+          className={`flex md:items-center md:h-[4rem]  ${
             closeMenu ? "h-[15rem]" : "h-[4rem]"
-          } md:px-12 px-6 border-b border-[#DEDFE2] shadow-[0_35px_60px_-15px_#1026490F]  items-start relative`}
+          } md:px-12 px-6 border-b border-[#DEDFE2] shadow-[0_35px_60px_-15px_#1026490F] items-start relative`}
         >
           <div className="text-lg font-bold md:py-0 py-4">
             <img src={logo} alt="" />
